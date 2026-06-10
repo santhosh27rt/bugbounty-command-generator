@@ -39,7 +39,6 @@ Vulnerability Scanning
 Nuclei
 Nikto
 Installation
-git clone https://github.com/YOUR_USERNAME/bug-bounty-command-generator.git
 
 cd bug-bounty-command-generator
 
@@ -70,4 +69,4 @@ Always obtain proper authorization before testing any system.
 
 Author
 
-Santhosh Mani Kumar
+Santhosh Manoj Kumar

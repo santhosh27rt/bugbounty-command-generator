@@ -67,6 +67,35 @@ This project is intended for authorized security testing, bug bounty programs, a
 
 Always obtain proper authorization before testing any system.
 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+# 1. Create Script
+nano bugbounty.sh
+
+# Paste code
+CTRL + X
+Y
+ENTER
+
+# 2. Make Executable
+chmod +x bugbounty.sh
+
+# 3. Run Script
+./bugbounty.sh
+
+# Enter Target
+example.com
+
+# Output File Created
+example.com_commands.txt
+
+# 4. Run From Anywhere
+sudo mv bugbounty.sh /usr/local/bin/bugbounty
+sudo chmod +x /usr/local/bin/bugbounty
+
+# Use Anywhere
+bugbounty
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
 Author
 
 Santhosh Manoj Kumar

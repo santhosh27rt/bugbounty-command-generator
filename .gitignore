@@ -1,0 +1,7 @@
+*_commands.txt
+*.txt
+!requirements.txt
+*.log
+.DS_Store
+.idea/
+.vscode/

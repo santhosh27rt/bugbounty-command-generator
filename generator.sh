@@ -12,7 +12,7 @@ clear
 
 echo -e "${MAGENTA}"
 echo "════════════════════════════════════════════════════"
-echo "         Created By Santhosh Mani Kumar 🚀"
+echo "         Created By Santhosh Manoj Kumar 🚀"
 echo "════════════════════════════════════════════════════"
 echo -e "${NC}"
 
@@ -89,7 +89,7 @@ echo -e "${GREEN}═════════════════════
 
 echo ""
 echo -e "${CYAN}══════════════════════════════════════════════${NC}"
-echo -e "${YELLOW}Created By Santhosh Mani Kumar 🚀${NC}"
+echo -e "${YELLOW}Created By Santhosh Manoj Kumar 🚀${NC}"
 echo -e "${CYAN}══════════════════════════════════════════════${NC}"
 
 echo ""

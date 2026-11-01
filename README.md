@@ -1,101 +1,72 @@
-Bug Bounty Command Generator 🚀
+# bugbounty-command-generator
 
-Created By Santhosh Manoj Kumar
+> Generate a complete reconnaissance command set for a target domain — in one step.
 
-Description
+![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-A simple Bash script that generates bug bounty and reconnaissance commands for a target domain.
+A simple Bash script that builds a ready-to-run bug-bounty and recon command list for a given
+domain. It substitutes your target into every command and saves the result to a text file you
+can review and run step by step.
 
-The script automatically replaces the target domain in all commands and saves them into a text file.
+---
 
-Features
-Subdomain Enumeration
-Subfinder
-Assetfinder
-Findomain
-DNS Resolution
-DNSX
-Live Host Discovery
-HTTPX
-URL Collection
-Waybackurls
-GAU
-Crawling
-Katana
-Parameter Discovery
-Arjun
-Directory Discovery
-FFUF
-Dirsearch
-Feroxbuster
-Gobuster
-Technology Detection
-WhatWeb
-HTTPX
-Port Scanning
-Naabu
-Nmap
-Vulnerability Scanning
-Nuclei
-Nikto
-Installation
+## ✨ What it covers
 
-cd bug-bounty-command-generator
+| Stage | Tools |
+|---|---|
+| Subdomain enumeration | `subfinder`, `assetfinder`, `findomain` |
+| DNS resolution | `dnsx` |
+| Live host discovery | `httpx` |
+| URL collection | `waybackurls`, `gau` |
+| Crawling | `katana` |
+| Parameter discovery | `arjun` |
+| Directory discovery | `ffuf`, `dirsearch`, `feroxbuster`, `gobuster` |
+| Technology detection | `whatweb`, `httpx` |
+| Port scanning | `naabu`, `nmap` |
+| Vulnerability scanning | `nuclei`, `nikto` |
 
+> The script **generates** commands; it does not install the tools. Make sure the tools you
+> intend to run are installed and in your `PATH`.
+
+## 🚀 Usage
+
+```bash
+git clone https://github.com/santhosh27rt/bugbounty-command-generator.git
+cd bugbounty-command-generator
 chmod +x generator.sh
-Usage
 ./generator.sh
+```
 
 Enter the target domain when prompted:
 
-example.com
+```text
+[?] Enter Target Domain: example.com
+```
 
-The script will generate:
+The script writes all commands to:
 
+```text
 example.com_commands.txt
-Example
-./generator.sh
+```
 
-Output:
+### Run from anywhere (optional)
 
-[✓] Commands Generated Successfully
-[📄] File : example.com_commands.txt
-[🎯] Target : example.com
-Disclaimer
-
-This project is intended for authorized security testing, bug bounty programs, and educational purposes only.
-
-Always obtain proper authorization before testing any system.
-
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-# 1. Create Script
-nano bugbounty.sh
-
-# Paste code
-CTRL + X
-Y
-ENTER
-
-# 2. Make Executable
-chmod +x bugbounty.sh
-
-# 3. Run Script
-./bugbounty.sh
-
-# Enter Target
-example.com
-
-# Output File Created
-example.com_commands.txt
-
-# 4. Run From Anywhere
-sudo mv bugbounty.sh /usr/local/bin/bugbounty
+```bash
+sudo mv generator.sh /usr/local/bin/bugbounty
 sudo chmod +x /usr/local/bin/bugbounty
-
-# Use Anywhere
 bugbounty
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+```
 
-Author
+## ⚠️ Legal & responsible use
 
-Santhosh Manoj Kumar
+For **authorized security testing, bug-bounty programs, and educational purposes only**.
+Always confirm the target is in scope and that you have permission before running any command.
+
+## 📝 License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+**Author:** Santhosh Manoj Kumar
